@@ -30,7 +30,7 @@ completion-time: 20m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="20m"}
 
-The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on one or more virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
+The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can use [{{site.data.keyword.was4vsi_notm}}](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) to install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on one or more virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
 {: shortdesc}
 
 ## Before you begin
@@ -226,13 +226,14 @@ This template downloads WebSphere installation binary files from IBM Passport Ad
 ### Install a WebSphere product
 {: #2-install-was}
 
-1. In the form, set an identifiable name for your installation.
-2. Specify the **`vsi_ip`** and **`vsi_password`** values of the primary VSI.
-3. Specify the **`credential_keystore_file`** value or the **`ibm_id`** and **`ibm_id_password`** values.
-4. Review and complete the deployment values.
-5. Accept the license (terms and conditions).
-6. Click **Install**. It might take 15 minutes or more to complete the installation.
-7. Review the log. If you see the following messages towards the end of the log, then the installation was successful.
+1. Launch [{{site.data.keyword.was4vsi_notm}}](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global)
+2. In the form, set an identifiable name for your installation.
+3. Specify the **`vsi_ip`** and **`vsi_password`** values of the primary VSI.
+4. Specify the **`credential_keystore_file`** value or the **`ibm_id`** and **`ibm_id_password`** values.
+5. Review and complete the deployment values.
+6. Accept the license (terms and conditions).
+7. Click **Install**. It might take 15 minutes or more to complete the installation.
+8. Review the log. If you see the following messages towards the end of the log, then the installation was successful.
   ```
   Install of <was_topology> version <was_version> was successful.
   Install directory: /opt/IBM/WebSphere/
@@ -250,7 +251,7 @@ This template downloads WebSphere installation binary files from IBM Passport Ad
 
   For information about the log and correcting errors, see [FAQs](/docs/was-for-vsi?topic=was-for-vsi-faq), [Known issues](/docs/was-for-vsi?topic=was-for-vsi-known-issues), and [Troubleshooting](/docs/was-for-vsi?topic=was-for-vsi-troubleshoot).
 
-8. Access the administrative console with the **`vsi_username`** and **`vsi_password`** values to verify the installation.
+9. Access the administrative console with the **`vsi_username`** and **`vsi_password`** values to verify the installation.
 
 
 ## Next steps
