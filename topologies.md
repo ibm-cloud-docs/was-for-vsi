@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-05"
+lastupdated: "2020-11-30"
 
 keywords: topology, topologies, products, websphere, liberty, vsi
 
@@ -57,7 +57,7 @@ IBM HTTP Server also is provided on the primary VSI for the multiple server inst
 | WAS.Cell | DMgr + IBM HTTP Server |  Custom node(s) | 27 mins|
 | Liberty.Base | Liberty base | N/A | 17 mins|
 | Liberty.Collective | Liberty controller + IBM HTTP Server | Collective host(s) | 27 mins|
-{: caption="Table 1. TopologiesLiberty to WebSphere version mapping" caption-side="top"}
+{: caption="Table 1. Topologies" caption-side="top"}
 
 * Installation time varies depending on the VSI capacity, network connection, and number of secondary VSIs.  
 * You must not have any previous installation of WebSphere on any VSI.  
