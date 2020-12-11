@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-11-12"
+lastupdated: "2020-11-30"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
@@ -61,7 +61,7 @@ No, but you get charged for the infrastructure.
 {: #faq-upgrade}
 {: faq}
 
-No, you can use the title only for one installation. After the initial installation, it is your responsibility to manage and upgrade the installation. 
+No, you can use the tile only for one installation. After the initial installation, it is your responsibility to manage and upgrade the installation. 
 
 <!--
 === For later === 
