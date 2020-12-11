@@ -30,7 +30,7 @@ completion-time: 20m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="20m"}
 
-The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can use [{{site.data.keyword.was4vsi_notm}}](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) to install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on one or more virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
+The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can use [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) to install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on one or more virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
 {: shortdesc}
 
 ## Before you begin
@@ -226,7 +226,7 @@ This template downloads WebSphere installation binary files from IBM Passport Ad
 ### Install a WebSphere product
 {: #2-install-was}
 
-1. Launch [{{site.data.keyword.was4vsi_notm}}](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global)
+1. Launch [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global)
 2. In the form, set an identifiable name for your installation.
 3. Specify the **`vsi_ip`** and **`vsi_password`** values of the primary VSI.
 4. Specify the **`credential_keystore_file`** value or the **`ibm_id`** and **`ibm_id_password`** values.
