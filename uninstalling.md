@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-05"
+  years: 2020, 2021
+lastupdated: "2021-02-04"
 
 keywords: uninstalling, removing, workspace, resource
 
@@ -42,4 +42,4 @@ If you also select **Delete workspace**, then you will not be able to review the
 {: #uninst-vsi}
 
 1. Log in to the primary VSI and switch to the `<was_tf_dir>/scripts` directory.
-2. Run **`./destroy.sh`** to uninstall the WebSphere environment.
+2. Run **` sudo ./destroy.sh`** to uninstall the WebSphere environment.

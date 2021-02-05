@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-30"
+  years: 2020, 2021
+lastupdated: "2021-02-05"
 
 keywords: websphere, vsi, virtual server instance, liberty, terraform, deploying
 
@@ -97,6 +97,8 @@ If these instructions do not match the UI, see [VPC docs](/docs/vpc) for the lat
 7. Select a location.
 8. Attach the **Public gateway**.
 9. Review your data and click **Create virtual private cloud**.
+10. After the VPC is created, review **Access control lists** and **Security groups** for your VPC. Then, enable inbound and outbound traffic for the ports 80, 8008, 8879, 9060, 9080, 9043, and 9443.
+
 
 ### Provision one or more VSIs
 {: #2-provision-vsis}
@@ -226,7 +228,7 @@ This template downloads WebSphere installation binary files from IBM Passport Ad
 ### Install a WebSphere product
 {: #2-install-was}
 
-1. Launch [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global)
+1. Launch [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global){: external}.
 2. In the form, set an identifiable name for your installation.
 3. Specify the **`vsi_ip`** and **`vsi_password`** values of the primary VSI.
 4. Specify the **`credential_keystore_file`** value or the **`ibm_id`** and **`ibm_id_password`** values.
