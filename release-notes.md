@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-12"
+  years: 2021
+lastupdated: "2021-02-04"
 
 keywords: release notes, update, fix pack, fixpack, version, whats new, new in release
 
@@ -26,7 +26,16 @@ subcollection: was-for-vsi
 Use the release notes to learn about the latest changes to {{site.data.keyword.was4vsi}}. The notes are grouped by release date or version number.
 {: shortdesc}
 
-## November 20, 2020: {{site.data.keyword.was4vsi_short}} 1.0.0 on {{site.data.keyword.cloud_notm}}
+## 5 February 2021: {{site.data.keyword.was4vsi_short}} 1.0.1 on {{site.data.keyword.cloud_notm}}
+{: #v100}
+
+Version 1.0.1 provides enhancements and a command change:
+* Automatic restarting of services after a VSI reboots. Before, you had to restart {{site.data.keyword.appserver_short}} traditional and Liberty manually after a VSI rebooted.
+* Miscellaneous bug fixes
+* The command to [uninstall a WebSphere environment from the primary VSI](/docs/was-for-vsi?topic=was-for-vsi-uninstalling#uninst-vsi) changes from **`./destroy.sh`** to **` sudo ./destroy.sh`**.
+
+
+## 20 November 2020: {{site.data.keyword.was4vsi_short}} 1.0.0 on {{site.data.keyword.cloud_notm}}
 {: #v100}
 
 {{site.data.keyword.was4vsi_notm}} 1.0.0 is the first release of the product. Currently, {{site.data.keyword.was4vsi_short}} is available on
