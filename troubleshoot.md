@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-12"
+  years: 2020, 2021
+lastupdated: "2021-02-26"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -77,20 +77,7 @@ Your VSI is not registered with an entitlement server.
 Register your VSI with the {{site.data.keyword.redhat_full}} Satellite server. If you are getting a VSI from {{site.data.keyword.cloud}}, your VSI should already be registered with the {{site.data.keyword.redhat_notm}} Satellite Server.
 {: tsResolve}
 
-If the VSI is not registered, as root user, run the following command on the VSI that is not registered to the {{site.data.keyword.redhat_notm}} Satellite server.
-
-```bash
-# sh /var/lib/cloud/instance/scripts/vendor/part-003
-```
-{: codeblock}
-
-If the previous command fails, then run the following commands as root user.
-```bash
-Step 1. subscription-manager remove --all
-Step 2. subscription-manager unregister
-Step 3. subscription-manager clean
-Step 4. sh /var/lib/cloud/instance/scripts/vendor/part-003
-```
+If the VSI is not registered, as root user, register the VSI. See [How do I reregister a RHEL VSI?](/docs/vpc?topic=vpc-troubleshooting-your-virtual-servers-for-vpc#troubleshooting-reregister-RHEL-VSI) in the VPC documentation.
 
 If the VSI still does not register with the {{site.data.keyword.redhat_notm}} Satellite server, then open an [{{site.data.keyword.cloud}} Support case](/docs/was-for-vsi?topic=was-for-vsi-support).  
 
