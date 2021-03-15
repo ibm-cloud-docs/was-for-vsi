@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-05"
+lastupdated: "2021-03-11"
 
 keywords: websphere, vsi, virtual server instance, liberty, terraform, deploying
 
@@ -64,7 +64,7 @@ To download the {{site.data.keyword.appserver_short}} installation images, your 
 
 - The primary VSI must have an assigned public IP address so that they can be easily accessed over the internet.
 - Secondary VSIs can have a private IP but they must be reachable from the primary VSI.
-- Primary VSI's `<vsi_username home dir>/.ssh/known_hosts` file should contain entry for secondary VSIs.
+- The primary VSI `<vsi_username home dir>/.ssh/known_hosts` file should contain entry for secondary VSIs.
 - All VSIs must have connectivity to internet to enable download of WebSphere binary files from Passport Advantage. Ensure that you can connect to [https://www.ibm.com](https://www.ibm.com).
 
 ### VSI credentials
@@ -199,7 +199,6 @@ If these instructions do not match the UI, see [Virtual Server for VPC](/docs/vp
        ```
        {: codeblock}
 
-    4. Release the public IP of the secondary VSI.
 
 ## Install WebSphere products
 {: #websphere-installation-procedure}
@@ -258,6 +257,8 @@ This template downloads WebSphere installation binary files from IBM Passport Ad
 
 ## Next steps
 {: #next}
+
+Release the public IP of the secondary VSI. The public IP is also called a _floating IP_.
 
 You can [migrate your {{site.data.keyword.appserver_short}} traditional and Liberty product configurations and applications](/docs/was-for-vsi?topic=was-for-vsi-migrating) to your {{site.data.keyword.was4vsi_short}} environment.
 
