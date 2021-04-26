@@ -145,7 +145,7 @@ If you set ACLs to use the [hard way](#the-hard-way-to-configure-acls), installa
 ### Reconfigure access control lists
 {: rec-acl}
 
-After installation you can remove the rules to permit SSH, provided you don't intend to manage your servers from the command line with SSH. You also can remove the rules to restrict HTTP or HTTPS, provided your VSIs don't need internet connectivity. At a bare minimum, you need the following rules:
+After installation you can remove the rules to permit SSH, provided you don't intend to manage your servers from the command line with SSH. You also can remove the rules to restrict HTTP or HTTPS, provided your VSIs don't need internet connectivity. At minimum, you need the following rules:
 
 | Subnet access control list | Rules |
 | --- | --- |
@@ -160,7 +160,7 @@ For **required ports**, see [Enable connection to the admin panel](#enable-conne
 ### Reconfigure security groups
 {: rec-sg}
 
-After installation, you can remove the rules to permit SSH (as long as you don't intend to manage your servers from the command line via SSH). At a bare minimum, you need the following rules:
+After installation, you can remove the rules to permit SSH, provided you don't intend to manage your servers from the command line with SSH. At minimum, you need the following rules:
 
 | Topology | Security group | Inbound rules |
 | --- | --- | --- |
@@ -175,4 +175,4 @@ For the reconfigured SG inbound rules, **required ports** refers to ports on whi
 ### Remove the public gateway
 {: rem-gw}
 
-If you don't need your internal subnet to have internet connectivity and have reconfigured the ACL and SGs for it accordingly, also remove the public gateway. Without a public gateway the VSIs are isolated from the internet.
+If you don't need your internal subnet to have internet connectivity and have reconfigured the ACL and SGs for it, also remove the public gateway. Without a public gateway the VSIs are isolated from the internet.
