@@ -27,7 +27,7 @@ Use the release notes to learn about the latest changes to {{site.data.keyword.w
 {: shortdesc}
 
 ## 5 February 2021: {{site.data.keyword.was4vsi_short}} 1.0.1 on {{site.data.keyword.cloud_notm}}
-{: #v100}
+{: #v101}
 
 Version 1.0.1 provides enhancements and a command change:
 * Automatic restarting of services after a VSI reboots. Before, you had to restart {{site.data.keyword.appserver_short}} traditional and Liberty manually after a VSI rebooted.

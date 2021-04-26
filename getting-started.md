@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-03-11"
+lastupdated: "2021-04-20"
 
 keywords: websphere, vsi, virtual server instance, liberty, terraform, deploying
 
@@ -97,7 +97,7 @@ If these instructions do not match the UI, see [VPC docs](/docs/vpc) for the lat
 7. Select a location.
 8. Attach the **Public gateway**.
 9. Review your data and click **Create virtual private cloud**.
-10. After the VPC is created, review **Access control lists** and **Security groups** for your VPC. Then, enable inbound and outbound traffic for the ports 80, 8008, 8879, 9060, 9080, 9043, and 9443.
+10. After the VPC is created, review **Access control lists** and **Security groups** for your VPC. Ensure inbound and outbound traffic is permitted for the ports 22, 80, 443, 9043, 9060, 9080, and 9443.
 
 
 ### Provision one or more VSIs
