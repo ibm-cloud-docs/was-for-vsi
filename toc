@@ -6,15 +6,16 @@ IBM WebSphere Application Server for VSI
 
     {: .navgroup id="learn"}
     getting-started.md
-	topologies.md
-	dep-values.md
+    topologies.md
+    dep-values.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     migrating.md
+    subnets-multinode.md
     uninstalling.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="reference"}
     create-os-usersh.md
     licenses.md
