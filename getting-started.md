@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-04-20"
+lastupdated: "2021-05-20"
 
 keywords: websphere, vsi, virtual server instance, liberty, terraform, deploying
 
@@ -198,6 +198,8 @@ If these instructions do not match the UI, see [Virtual Server for VPC](/docs/vp
        ssh wsadmin@<secondary_VSI_IP>
        ```
        {: codeblock}
+
+6. Run the `umask` command to get your current umask value. The recommended value is `002`. If the value is not `002` or another value that is suitable for your VSIs, [change the value to `002`](/docs/was-for-vsi?topic=was-for-vsi-troubleshoot#troubleshoot-dirnotcreated).
 
 
 ## Install WebSphere products
