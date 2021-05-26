@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-26"
+lastupdated: "2021-05-26"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -28,6 +28,25 @@ General problems with using {{site.data.keyword.was4vsi}} in {{site.data.keyword
 {: shortdesc}
 <!-- where the first xxx is the long name of your service and the following xxx are pulled from your popular troubleshooting topics -->
 
+
+## Unable to create directory when setting up a non-root user on VSIs
+{: #troubleshoot-dirnotcreated}
+{: troubleshoot}
+
+The installation failed with `create_was_dirs.sh: ERROR: Unable to create directory /opt/IBM/WebSphere/Profiles.`
+{: tsSymptoms}
+
+The default umask for your **`vsi_username`** is not `002`. A umask value of `027` can cause the error.
+{: tsCauses}
+
+1. Run the `umask` command to get your current umask value.
+2. If the umask value is not `002`, change the value in the file where umask is defined, typically in `/etc/bashrc` but also in `/etc/profile` or `~/.bashrc`. The recommended value is `002` but another value might be suitable for your VSI.
+3. For the changes to take effect, reload the configuration scripts by relogging or with the `source` command.
+
+For more information, see [Set up non-root user and SSH login on all VSIs](/docs/was-for-vsi?topic=was-for-vsi-getting-started#3-setup-non-root-user-and-ssh-login-on-all-vsis).
+{: tsResolve}
+
+
 ## Required installation files are not found
 {: #troubleshoot-notfound}
 {: troubleshoot}
@@ -39,6 +58,28 @@ The error might occur due to network or IBM Passport Advantage issues.
 {: tsCauses}
 
 Run the `terraform destroy` command and retry the installation. Also, make sure you are using correct values for `was_topology` and `was_version`.
+{: tsResolve}
+
+
+## Installation fails with a status 126 error
+{: #troubleshoot-noexec}
+{: troubleshoot}
+
+Installation ends with the `Process exited with status 126` error.
+{: tsSymptoms}
+
+The `/tmp` directory for a provisioned VSI is mounted with the `noexec` mount option. Installation scripts are run in the `/tmp` directory and the directory must not have the `noexec` mount option.
+{: tsCauses}
+
+1. Check the mount option for the `/tmp` directory with the **`findmt`** command.
+   ```bash
+   findmnt -l | grep /tmp
+   ```
+   {: codeblock}
+2. Look for `noexec` in the `OPTIONS` column.
+3. If `noexec` is in the mount options, remove it. Open the `/etc/fstab` file as root and remove the `noexec` option for the `/tmp` directory.
+4. Run **`mount -o remount /tmp`** to remount the `/tmp` directory. The **`mount`** command checks the options in the `/etc/fstab` file and remounts the `/tmp` directory without the `noexec` option.
+5. [Start the installation](/docs/was-for-vsi?topic=was-for-vsi-getting-started#2-install-was) again.
 {: tsResolve}
 
 
@@ -111,4 +152,4 @@ The URL for the administrative console might be incorrect or the port might not 
 Use the correct URL to the console.
 {: tsResolve}
 
-Make sure that incoming traffic is allowed at the specified port. Refer to [{{site.data.keyword.cloud}} VPC network](/docs/vpc?topic=vpc-about-networking-for-vpc) documents for more detail. You might need to add an inbound rule to the security group to allow incoming traffic.
+Make sure that incoming traffic is allowed at the specified port. Refer to [{{site.data.keyword.cloud_notm}} VPC network](/docs/vpc?topic=vpc-about-networking-for-vpc) documents for more detail. You might need to add an inbound rule to the security group to allow incoming traffic.
