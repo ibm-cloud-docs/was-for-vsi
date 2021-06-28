@@ -20,6 +20,7 @@ IBM WebSphere Application Server for VSI
     create-os-usersh.md
     licenses.md
     liberty-version-mapping.md
+	[Terraform reference](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
