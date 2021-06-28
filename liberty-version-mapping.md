@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-03-26"
+lastupdated: "2021-06-18"
 
 keywords: license, licenses, terms, conditions, websphere, liberty, vsi
 
@@ -30,6 +30,7 @@ To find the WebSphere license version for the Liberty product that you want to i
 
 | Liberty version   | WebSphere version |
 |-------------------|-------------------|
+|21.0.0.6|9.0.5.8|
 |21.0.0.3|9.0.5.7|
 |21.0.0.2|9.0.5.6|
 |21.0.0.1|9.0.5.6|
