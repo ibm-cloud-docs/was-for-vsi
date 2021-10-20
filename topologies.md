@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-30"
+  years: 2020, 2021
+lastupdated: "2021-10-14"
 
-keywords: topology, topologies, products, websphere, liberty, vsi
+keywords: topology, topologies, products, websphere, vsi
 
 subcollection: was-for-vsi
 
@@ -23,44 +23,52 @@ subcollection: was-for-vsi
 # Topologies
 {: #topologies}
 
-Use {{site.data.keyword.was4vsi}} to install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on a virtual server instance (VSI) on {{site.data.keyword.cloud}}.
+Use {{site.data.keyword.was4vsi}} to install a {{site.data.keyword.appserver_short}} traditional environment on a {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4 virtual server instance (VSI) on {{site.data.keyword.cloud}}.
 {: shortdesc}
 
-## Terminology
-{: #terminology}
+To install a {{site.data.keyword.appserver_short}} Liberty environment on {{site.data.keyword.cloud_notm}}, use [Java Liberty App](https://cloud.ibm.com/developer/appservice/create-app?starterKit=687d91f2-ba5c-3914-8da5-57876c1f772a){: external}.
+{: tip}
 
-This documentation refers to {{site.data.keyword.appserver_short}} and IBM Liberty as ***WebSphere*** or ***WAS***.
+This documentation refers to {{site.data.keyword.appserver_short}} as ***WebSphere*** or ***WAS***.
 
-### Single server
-{: #singles}
+{{site.data.keyword.was4vsi}} offers two topologies: **`WAS.Base`** and **`WAS.Cell`**. Specify one of these topologies as a value for the `deploy_was_topology` parameter.
 
-{{site.data.keyword.appserver_short}} traditional (WAS.Base) and {{site.data.keyword.appserver_short}} Liberty (Liberty.Base) provide single servers. For single server installation, the VSI is referred to as ***single server VSI*** or ***primary VSI***.
+**WAS.Base**
+:   The `WAS.Base` topology provisions one VSI with the latest release of {{site.data.keyword.appserver_short}} traditional V9.0.5. WAS.Base provides a single server. This VSI has a public (floating) IP address.
 
-### Multiple servers
-{: #multiples}
+**WAS.Cell**
+:   The `WAS.Cell` topology provides multiple VSIs with the latest release of {{site.data.keyword.appserver_short}} Network Deployment traditional V9.0.5. WAS.Cell provisions one VSI with the deployment manager (DMgr), with one or more VSIs for custom nodes. You can also set up an IBM HTTP Server (IHS) VSI. DMgr and IHS VSIs have public (floating) IP addresses, while custom node VSIs have private IP addresses.
 
-{{site.data.keyword.appserver_short}} Network Deployment traditional (WAS.Cell) and {{site.data.keyword.appserver_short}} Network Deployment Liberty (Liberty.Collective) provide multiple servers.
-- For WAS.Cell installation, the deployment manager VSI is referred to as ***primary VSI*** and custom node VSIs are referred to as ***secondary VSIs***.
-- For Liberty.Collective, the Liberty controller VSI is referred to as ***primary VSI*** and Liberty host VSIs are referred to as ***secondary VSIs***.
-
-IBM HTTP Server also is provided on the primary VSI for the multiple server installations.
-
-## Supported topologies
-{: #supported}
-
-{{site.data.keyword.was4vsi}} offers the following topologies for single and multiple server installations.
-
-
-| Topology                  | Primary VSI | Secondary VSI | Installation time|
-|---------------------------|------------------|-----------------------|------------------------|
-| WAS.Base | WAS base | N/A | 17 mins|
-| WAS.Cell | DMgr + IBM HTTP Server |  Custom node(s) | 27 mins|
-| Liberty.Base | Liberty base | N/A | 17 mins|
-| Liberty.Collective | Liberty controller + IBM HTTP Server | Collective host(s) | 27 mins|
-{: caption="Table 1. Topologies" caption-side="top"}
-
-* Installation time varies depending on the VSI capacity, network connection, and number of secondary VSIs.  
-* You must not have any previous installation of WebSphere on any VSI.  
-* Installing multiple topologies on a VSI is not supported.  
-* After initial installation, you cannot use the steps in [Deploying {{site.data.keyword.was4vsi_notm}}](/docs/was-for-vsi?topic=was-for-vsi-getting-started) to add additional secondary VSIs. You can still add them directly using WebSphere installation procedures.
+The installation sets up a new virtual private cloud (VPC), one or more VSIs, and relevant networking.
 {: note}
+
+## VPC details
+
+The VPC, VSI, and related networking artifacts are created in the same resource group where Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see https://cloud.ibm.com/vpc-ext.
+
+## VSI details
+
+- All the VSIs are set up within the same subnet.
+
+- The VSIs for Base, DMgr, and IHS have public (floating) IP addresses and private IP addresses. For WAS.Cell, the custom nodes VSIs only have private IP addresses.
+
+- Each VSI is set up with three user IDs:
+
+   root
+   : Use the sshkey (`vpc_sshkey_name`) that you set up to log in (ssh) to the VSIs as root.
+
+   OS administrator (`vsi_os_admin_name`)
+   : The default value for the OS administrator is `virtuser`. You can change the default value. Use the `vsi_os_admin_password` to log in (ssh) as this user.
+
+   WebSphere administrator (`vsi_websphere_admin_name`)
+   : The default value for the WebSphere administrator is `wsadmin`. You can change the default value. Use the `vsi_websphere_admin_password` to log in (ssh) as this user.
+
+- OS administrator and WebSphere administrator have password-less sudo access enabled on all VSIs. For WAS.Cell, the OS administrator and WebSphere administrator also have password-less sudo access enabled among the VSIs.
+
+- Several ports are opened by default. Depending on your scenario, you might need to open more ports for your application to work.
+    - `22` for ssh login
+    - `80` for the IBM HTTP Server console, if `cell_ihs_setup_vsi` is true
+    - `8080`, `9043-9443` for the WebSphere administrative console and applications
+
+
+- For more configuration information, see the `/etc/virtualimage.properties` file on the VSI. All properties listed in this file might not apply to your specified topology.

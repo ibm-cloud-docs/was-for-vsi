@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-05"
+  years: 2020, 2021
+lastupdated: "2021-10-14"
 
 keywords: known issue, bug, problem
 
@@ -24,30 +24,16 @@ subcollection: was-for-vsi
 # Known issues
 {: #known-issues}
 
-The current release of {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}} has the following known issues.
+The current release of {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}} has the following known issue.
 {: shortdesc}
 
 <!-- where the first xxx is the long name of your service and the following xxx are pulled from your popular troubleshooting topics -->
 
-## Installation ends with Warning: External references from destroy provisioners are deprecated
+## javacore generated after VSI reboot
 {: issue-warning}
 
-After a successful installation, the following message is shown:
+After the VSI is rebooted, all services start successfully but a javacore file is generated in the `/opt/IBM/WebSphere/AppServer/profiles/profile_name/` directory.
 
-```
-Warning: External references from destroy provisioners are deprecated
-  on main.tf line 36, in resource "null_resource" "was_install":
-  36:     user = var.vsi_username
-
-Destroy-time provisioners and their connection configurations may only
-reference attributes of the related resource, via 'self', 'count.index', or
-'each.key'.
-
-References to other resources during the destroy phase can cause dependency
-cycles and interact poorly with create_before_destroy.
-...
-
-Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
-```
-
-The `Apply complete! Resources: 1 added, 0 changed, 0 destroyed.` message indicates that the installation was successful. You can ignore the warnings in the rest of the message.
+This is working as expected. Refer to following documents if you want to disable the creation of javacore file:
+- [PH39733: PROVIDE A SWITCH TO DISABLE JAVACORES FOR UNEXPECTED SHUTDOWNS (ibm.com)](https://www.ibm.com/support/pages/apar/PH39733)
+- [Setting generic JVM arguments in WebSphere Application Server (ibm.com)](https://www.ibm.com/support/pages/setting-generic-jvm-arguments-websphere-application-server)

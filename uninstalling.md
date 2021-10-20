@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-02-04"
+lastupdated: "2021-10-14"
 
 keywords: uninstalling, removing, workspace, resource
 
@@ -24,22 +24,13 @@ subcollection: was-for-vsi
 # Uninstalling your workspace or resources
 {: #uninstalling}
 
-You can uninstall {{site.data.keyword.was4vsi_short}} from the {{site.data.keyword.cloud_notm}} Schematics workspace or from the primary VSI.
+You can uninstall {{site.data.keyword.was4vsi_short}} from the {{site.data.keyword.cloud_notm}} Schematics workspace. Uninstallation deletes all the VSIs, VPC, and related artifacts that were set up during the installation.
 {: shortdesc}
 
 ## Uninstall from the Schematics workspace
 {: #uninst-wksp}
 
 1. Log in to {{site.data.keyword.cloud_notm}} and [find the Schematics workspace](/schematics/workspaces) that was created during the installation.
-2. Click **Actions > Delete**.
-3. Select **Delete all associated resources to uninstall**.
-
-If you also select **Delete workspace**, then you will not be able to review the deletion logs. To view the logs, delete the resources first, and then delete the workspace.
+2. Click **Actions > Destroy**. This will delete all the VSIs, VPC, and related artifacts that were set up during the installation. If you created or changed any infrastructure configuration, then you might need to clean up the artifacts manually.
+3. You can also delete the workspace by clicking **Actions > Delete workspace**.
 {: important}
-
-
-## Uninstall from the primary VSI
-{: #uninst-vsi}
-
-1. Log in to the primary VSI and switch to the `<was_tf_dir>/scripts` directory.
-2. Run **` sudo ./destroy.sh`** to uninstall the WebSphere environment.

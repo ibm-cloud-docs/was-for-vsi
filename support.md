@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-09"
+  years: 2020, 2021
+lastupdated: "2021-10-14"
 
 keywords: getting help, getting support
 
@@ -40,4 +40,6 @@ a support case, or about case severities and response times, see
 [Working with support cases](/docs/get-support?topic=get-support-open-case) or
 [Escalating support cases](/docs/get-support?topic=get-support-escalation).
 
-To get IBM software support updates, [subscribe to My Notifications and other communications](http://www.ibm.com/software/support/einfo.html){: external}.
+To get IBM software support updates, [subscribe to My Notifications and other communications](https://www.ibm.com/support/pages/node/718119){: external}.
+
+Join the [IBM WebSphere, Liberty & DevOps Community](https://community.ibm.com/community/user/wasdevops/communities/websphere-home){: external} or [other communities](https://community.ibm.com/community/user/sitemap){: external} to collaborate and share knowledge via forums and blogs.
