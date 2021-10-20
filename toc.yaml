@@ -9,8 +9,8 @@ toc:
     category: dev_ops
     audience: software
     href: /docs/was-for-vsi?topic=was-for-vsi-getting-started#getting-started
-    console-page: /docs/was-for-vsi?topic=was-for-vsi-getting-started
-    product-page: https://ibm.com/cloud/was-for-vsi
+    console-page: /catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global
+    product-page: https://www.ibm.com/cloud/websphere-application-server
     path: was-for-vsi
     label: WebSphere Application Server
 
