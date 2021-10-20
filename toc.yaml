@@ -1,0 +1,57 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+
+toc:
+  properties:
+    subcollection: was-for-vsi
+    version: 2
+    category: dev_ops
+    audience: software
+    href: /docs/was-for-vsi?topic=was-for-vsi-getting-started#getting-started
+    console-page: /docs/was-for-vsi?topic=was-for-vsi-getting-started
+    product-page: https://ibm.com/cloud/was-for-vsi
+    path: was-for-vsi
+    label: WebSphere Application Server
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries: 
+    - navgroup: 
+       id: learn
+       topics:
+       - getting-started.md
+       - topologies.md
+       - dep-values.md
+
+#    - navgroup: 
+#      id: tutorial
+#      topics: 
+#      - topic-1.md
+#      - topic-2.md
+
+    - navgroup: 
+       id: howto
+       topics:
+       - migrating.md
+       - uninstalling.md
+
+#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
+#  Links to your command line reference docs should be included in the Reference navigation group.
+    - navgroup:
+       id: reference
+       topics:
+       - licenses.md
+       links:
+       - link:
+          label: Terraform reference
+          href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs
+
+    - navgroup:
+       id: help
+       topics:
+       - support.md
+       - release-notes.md
+       - faq.md
+       - known-issues.md
+       - troubleshoot.md
+

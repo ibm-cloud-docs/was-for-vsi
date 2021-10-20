@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2020-11-30"
+  years: 2020, 2021
+lastupdated: "2021-10-14"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
@@ -25,13 +25,13 @@ Review frequently asked questions for {{site.data.keyword.was4vsi}} in {{site.da
 {: #faq-products}
 {: faq}
 
-You can install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on a virtual server instance (VSI) on {{site.data.keyword.cloud_notm}}. For a description of the topologies that you can install with {{site.data.keyword.was4vsi_short}}, see [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies).
+You can install a {{site.data.keyword.appserver_short}} traditional environment on a virtual server instance (VSI) on {{site.data.keyword.cloud_notm}}. For a description of the topologies that you can install with {{site.data.keyword.was4vsi_short}}, see [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies).
 
 ## What permissions do I need to use this tile?
 {: #faq-permits}
 {: faq}
 
-You need Manager role on the Schematics service in at least one resource group.
+You need Manager role on the Schematics service in at least one resource group. You also need Administrator role for VPC Infrastructure Services in the resource group for the Schematics workspace, VPC, and VSIs.
 
 ## Where can I see the installation logs?
 {: #faq-logs}
@@ -55,7 +55,7 @@ Follow the instructions in [Uninstalling your workspace or resources](/docs/was-
 {: #faq-tile}
 {: faq}
 
-No, but you get charged for the infrastructure.
+No, but you get charged for the infrastructure. Refer to [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies) for infrastructure resources provisioned and to [Pricing](https://www.ibm.com/cloud/vpc/pricing) for the associated cost.
 
 ## Can I use the tile to upgrade {{site.data.keyword.appserver_short}} after initial installation?
 {: #faq-upgrade}
