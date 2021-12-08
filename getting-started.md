@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-10-14"
+lastupdated: "2021-10-20"
 
 
 keywords: websphere, vsi, virtual server instance, terraform, deploying
@@ -76,7 +76,7 @@ The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can 
 ## Next steps
 {: #next}
 
-You can [migrate your {{site.data.keyword.appserver_short}} product configurations and applications](/docs/was-for-vsi?topic=was-for-vsi-migrating) to your {{site.data.keyword.was4vsi_short}} environment.
+You can [migrate your {{site.data.keyword.appserver_short}} applications](/docs/was-for-vsi?topic=was-for-vsi-migrating) to your {{site.data.keyword.was4vsi_short}} environment.
 
 To get IBM software support updates, [subscribe to My Notifications and other communications](https://www.ibm.com/support/pages/node/718119){: external}.
 

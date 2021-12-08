@@ -27,10 +27,9 @@ subcollection: was-for-vsi
 The current release of {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}} has the following known issue.
 {: shortdesc}
 
-<!-- where the first xxx is the long name of your service and the following xxx are pulled from your popular troubleshooting topics -->
 
 ## javacore generated after VSI reboot
-{: issue-warning}
+{: #issue-warning}
 
 After the VSI is rebooted, all services start successfully but a javacore file is generated in the `/opt/IBM/WebSphere/AppServer/profiles/profile_name/` directory.
 

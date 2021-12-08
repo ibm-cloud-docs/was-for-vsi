@@ -38,7 +38,7 @@ Version 2.1.0 changes the Version 1.0 product:
 For information about the 2.1.0 product, see the following documentation:
 * [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies) describes the product and available topologies.
 * [Deploying {{site.data.keyword.was4vsi_notm}}](/docs/was-for-vsi?topic=was-for-vsi-getting-started) describes how to install a {{site.data.keyword.appserver_short}} traditional environment on one or more VSIs.
-* [Migrating your workload](/docs/was-for-vsi?topic=was-for-vsi-migrating) points to information that you can follow to migrate your existing {{site.data.keyword.appserver_short}} traditional configurations and applications to VSIs.
+* [Migrating your workload](/docs/was-for-vsi?topic=was-for-vsi-migrating) points to information that you can follow to migrate your existing {{site.data.keyword.appserver_short}} traditional applications to VSIs.
 * [Troubleshooting](/docs/was-for-vsi?topic=was-for-vsi-troubleshoot) describes problems that you might encounter when you install and use the product and provides instructions for fixing the problems.
 
 
@@ -60,5 +60,5 @@ Version 1.0.1 provides enhancements and a command change:
 For information about the product, see the following documentation:
 * [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies) describes the product and available topologies.
 * [Deploying {{site.data.keyword.was4vsi_notm}}](/docs/was-for-vsi?topic=was-for-vsi-getting-started) describes how to install a {{site.data.keyword.appserver_short}} traditional or Liberty environment on one or more virtual server instances (VSIs).
-* [Migrating your workload](/docs/was-for-vsi?topic=was-for-vsi-migrating) points to information that you can follow to migrate your existing {{site.data.keyword.appserver_short}} traditional or Liberty configurations and applications to VSIs.
+* [Migrating your workload](/docs/was-for-vsi?topic=was-for-vsi-migrating) points to information that you can follow to migrate your existing {{site.data.keyword.appserver_short}} traditional or Liberty applications to VSIs.
 * [Troubleshooting](/docs/was-for-vsi?topic=was-for-vsi-troubleshoot) describes problems that you might encounter when you install and use the product and provides instructions for fixing the problems.
