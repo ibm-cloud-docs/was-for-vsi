@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2021
-lastupdated: "2021-10-14"
+lastupdated: "2021-10-20"
 
 keywords: topology, topologies, products, websphere, vsi
 
@@ -43,10 +43,12 @@ The installation sets up a new virtual private cloud (VPC), one or more VSIs, an
 {: note}
 
 ## VPC details
+{: #vpc-details}
 
 The VPC, VSI, and related networking artifacts are created in the same resource group where Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see https://cloud.ibm.com/vpc-ext.
 
 ## VSI details
+{: #vsi-details}
 
 - All the VSIs are set up within the same subnet.
 
