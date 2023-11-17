@@ -31,6 +31,5 @@ You can uninstall {{site.data.keyword.was4vsi_short}} from the {{site.data.keywo
 {: #uninst-wksp}
 
 1. Log in to {{site.data.keyword.cloud_notm}} and [find the Schematics workspace](/schematics/workspaces) that was created during the installation.
-2. Click **Actions > Destroy**. This will delete all the VSIs, VPC, and related artifacts that were set up during the installation. If you created or changed any infrastructure configuration, then you might need to clean up the artifacts manually.
+2. Click **Actions > Destroy**. The destroy action deletes all the VSIs, VPC, and related artifacts that were set up during the installation. If you created or changed any infrastructure configuration, then you might need to clean up the artifacts manually.
 3. You can also delete the workspace by clicking **Actions > Delete workspace**.
-{: important}

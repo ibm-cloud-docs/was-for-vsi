@@ -18,7 +18,7 @@ subcollection: was-for-vsi
 # FAQs
 {: #faq}
 
-Review frequently asked questions for {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see the [FAQ library](/docs/faqs){: new_window}.
+Review frequently asked questions for {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see the [FAQ library](/docs/faqs){: external}.
 {: shortdesc}
 
 ## What products can I install with {{site.data.keyword.was4vsi_short}}?
