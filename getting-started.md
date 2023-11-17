@@ -49,7 +49,7 @@ The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can 
 1. Launch [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global){: external}.
 2. In the form, set an identifiable name for your installation.
 3. Specify all the required parameters. Set a strong password for `vsi_os_admin_password` and `vsi_websphere_admin_password`.
-4. Review and specify optional parameters as needed. Some optional parameters depend on the value you chose for `deploy_was_topology`.
+4. Review and specify optional parameters as needed. Some optional parameters depend on the value that you chose for `deploy_was_topology`.
 5. Accept the license (terms and conditions).
 6. Click **Install**. It might take 5 or more minutes to complete the installation. Installation time varies depending on the available interim fixes, network speed, and VSI specifications.
 7. Review the log. If you see the following messages toward the end of the log, then the installation was successful.

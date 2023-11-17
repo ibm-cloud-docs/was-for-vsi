@@ -33,12 +33,13 @@ General problems with using {{site.data.keyword.was4vsi}} in {{site.data.keyword
 {: #troubleshoot-profilenotfound}
 {: troubleshoot}
 
+The error pertains to a vsi profile value, which follows `"ibm_is_instance"` in the error message. 
+{: tsSymptoms}
+
 ```text
 on main.tf line 184, in resource "ibm_is_instance" "primary":
  184: resource "ibm_is_instance" "primary" {
 ```
-
-{: tsSymptoms}
 
 The error occurs when a vsi profile value is not valid.
 {: tsCauses}
@@ -73,5 +74,5 @@ Error in Schematics log: timeout - last error: SSH authentication failed (USER@I
 The error means that the specified value for the `vsi_os_admin_name` or `vsi_websphere_admin_name` parameter is wrong.
 {: tsCauses}
 
-If you have changed the default value for the `vsi_os_admin_name` or `vsi_websphere_admin_name` parameter, then make sure that the new value does not contain the `virtuser` or `wsadmin` default value.
+If you changed the default value for the `vsi_os_admin_name` or `vsi_websphere_admin_name` parameter, then make sure that the new value does not contain the `virtuser` or `wsadmin` default value.
 {: tsResolve}

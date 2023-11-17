@@ -45,14 +45,14 @@ The installation sets up a new virtual private cloud (VPC), one or more VSIs, an
 ## VPC details
 {: #vpc-details}
 
-The VPC, VSI, and related networking artifacts are created in the same resource group where Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see https://cloud.ibm.com/vpc-ext.
+The VPC, VSI, and related networking artifacts are created in the same resource group where the Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see https://cloud.ibm.com/vpc-ext.
 
 ## VSI details
 {: #vsi-details}
 
 - All the VSIs are set up within the same subnet.
 
-- The VSIs for Base, DMgr, and IHS have public (floating) IP addresses and private IP addresses. For WAS.Cell, the custom nodes VSIs only have private IP addresses.
+- The VSIs for Base, DMgr, and IHS have public (floating) IP addresses and private IP addresses. For WAS.Cell, the custom nodes VSIs have private IP addresses only.
 
 - Each VSI is set up with three user IDs:
 
@@ -73,4 +73,4 @@ The VPC, VSI, and related networking artifacts are created in the same resource 
     - `8080`, `9043-9443` for the WebSphere administrative console and applications
 
 
-- For more configuration information, see the `/etc/virtualimage.properties` file on the VSI. All properties listed in this file might not apply to your specified topology.
+- For more configuration information, see the `/etc/virtualimage.properties` file on the VSI. All properties that are listed in this file might not apply to your specified topology.

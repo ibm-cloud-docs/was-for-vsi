@@ -33,6 +33,6 @@ The current release of {{site.data.keyword.was4vsi}} in {{site.data.keyword.clou
 
 After the VSI is rebooted, all services start successfully but a javacore file is generated in the `/opt/IBM/WebSphere/AppServer/profiles/profile_name/` directory.
 
-This is working as expected. Refer to following documents if you want to disable the creation of javacore file:
+This is working as expected. Refer to the following documents if you want to disable the creation of javacore file:
 - [PH39733: PROVIDE A SWITCH TO DISABLE JAVACORES FOR UNEXPECTED SHUTDOWNS (ibm.com)](https://www.ibm.com/support/pages/apar/PH39733)
 - [Setting generic JVM arguments in WebSphere Application Server (ibm.com)](https://www.ibm.com/support/pages/setting-generic-jvm-arguments-websphere-application-server)

@@ -32,7 +32,7 @@ Use the release notes to learn about the latest changes to {{site.data.keyword.w
 Version 2.1.0 changes the Version 1.0 product:
 * The product name was shortened to *{{site.data.keyword.appserver_short}}* from *{{site.data.keyword.appserver_short}} for VSI*.
 * The product continues to offer the WAS.Base and WAS.Cell topologies for {{site.data.keyword.appserver_short}} traditional environments. The Liberty environments are no longer offered.
-* Installation uses VSI images with the latest version of WebSphere traditional Version 9.0.5 pre-installed on {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4.
+* Installation uses VSI images with the latest version of WebSphere traditional Version 9.0.5 preinstalled on {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4.
 * Installation is now quicker and simpler. You no longer must set up virtual private clouds (VPCs) or provision virtual server instances (VSIs).
 
 For information about the 2.1.0 product, see the following documentation:
