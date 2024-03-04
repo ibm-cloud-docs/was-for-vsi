@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-20"
+  years: 2020, 2024
+lastupdated: "2024-02-23"
 
 keywords: topology, topologies, products, websphere, vsi
 
@@ -25,9 +25,6 @@ subcollection: was-for-vsi
 
 Use {{site.data.keyword.was4vsi}} to install a {{site.data.keyword.appserver_short}} traditional environment on a {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4 virtual server instance (VSI) on {{site.data.keyword.cloud}}.
 {: shortdesc}
-
-To install a {{site.data.keyword.appserver_short}} Liberty environment on {{site.data.keyword.cloud_notm}}, use [Java Liberty App](https://cloud.ibm.com/developer/appservice/create-app?starterKit=687d91f2-ba5c-3914-8da5-57876c1f772a){: external}.
-{: tip}
 
 This documentation refers to {{site.data.keyword.appserver_short}} as ***WebSphere*** or ***WAS***.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-10-20"
+  years: 2021, 2024
+lastupdated: "2024-02-23"
 
 keywords: release notes, update, fix pack, fixpack, version, whats new, new in release
 
@@ -27,7 +27,7 @@ Use the release notes to learn about the latest changes to {{site.data.keyword.w
 {: shortdesc}
 
 ## 20 October 2021: {{site.data.keyword.was4vsi_short}} 2.1.0 on {{site.data.keyword.cloud_notm}}
-{: #v101}
+{: #v210}
 
 Version 2.1.0 changes the Version 1.0 product:
 * The product name was shortened to *{{site.data.keyword.appserver_short}}* from *{{site.data.keyword.appserver_short}} for VSI*.
@@ -48,7 +48,6 @@ For information about the 2.1.0 product, see the following documentation:
 Version 1.0.1 provides enhancements and a command change:
 * Automatic restarting of services after a VSI reboots. Before, you had to restart {{site.data.keyword.appserver_short}} traditional and Liberty manually after a VSI rebooted.
 * Miscellaneous bug fixes
-* The command to [uninstall a WebSphere environment from the primary VSI](/docs/was-for-vsi?topic=was-for-vsi-uninstalling#uninst-vsi) changes from **`./destroy.sh`** to **`sudo ./destroy.sh`**.
 
 
 ## 20 November 2020: {{site.data.keyword.was4vsi_short}} 1.0.0 on {{site.data.keyword.cloud_notm}}

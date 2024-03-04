@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-11-07"
+  years: 2020, 2024
+lastupdated: "2024-02-23"
 
 keywords: getting help, getting support
 
@@ -23,7 +23,7 @@ subcollection: was-for-vsi
 {: #support}
 
 If you have problems with {{site.data.keyword.was4vsi}} or questions about it, you can go directly to the
-[{{site.data.keyword.IBM_notm}} Support page](https://www.ibm.com/mysupport/s/createrecord/NewCase) to review featured FAQs,
+[{{site.data.keyword.IBM_notm}} Support page](https://www.ibm.com/mysupport/s/) to review featured FAQs,
 view cloud status, or post questions on Stack Overflow. You can also open a support case.
 {: shortdesc}
 
