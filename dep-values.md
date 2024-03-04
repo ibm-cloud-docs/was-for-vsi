@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-14"
+  years: 2020, 2024
+lastupdated: "2024-02-23"
 
 keywords: deployment values, install, websphere, vsi, passport advantage, ppa
 
@@ -40,7 +40,7 @@ When you install the WebSphere products, select the parameter values for deploym
 {: #vpc-parms}
 
 **`Region`**
-:  The region and zone where the VPC is created, such as `us-south-1` or `us-east-2`. For the latest list of {{site.data.keyword.cloud_notm}} regions, see the [Virtual Private Cloud (VPC) documentation](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region#get-zones).
+:  The region and zone where the VPC is created, such as `us-south-1` or `us-east-2`. For the latest list of {{site.data.keyword.cloud_notm}} regions, see the [Virtual Private Cloud (VPC) documentation](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region).
 
 **`vpc_name`**
 :  The unique name for this VPC. The name must start with a lowercase letter, use only lowercase alphanumeric characters and hyphens (without spaces), and cannot end with a hyphen. This offer creates a ([VPC](/vpc-ext/network/vpcs)) and one or more [virtual server instances (VSIs)](/vpc-ext/compute/vs) where WebSphere is installed."
@@ -65,22 +65,22 @@ When you install the WebSphere products, select the parameter values for deploym
 {: #was-opt-parms}
 
 **`base_vsi_profile`**
-:   The instance profile for the WAS base VSI in a `WAS.Base` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://www.ibm.com/cloud/vpc/pricing).
+:   The instance profile for the WAS base VSI in a `WAS.Base` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs).
 
 **`cell_dmgr_vsi_profile`**
-:   The instance profile for the DMgr VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://www.ibm.com/cloud/vpc/pricing).
+:   The instance profile for the DMgr VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs).
 
 **`cell_ihs_setup_vsi`**
 :   When set to `true`, sets up the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `true`. Only applicable when deploy_was_topology is WAS.Cell.
 
 **`cell_ihs_vsi_profile`**
-:   The instance profile for the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://www.ibm.com/cloud/vpc/pricing). Only applicable when deploy_was_topology is WAS.Cell.
+:   The instance profile for the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when deploy_was_topology is WAS.Cell.
 
 **`cell_node_count`**
 :   The number of custom nodes you want to provision for WAS.Cell, which must be between 1 and 20 (inclusive). This parameter is ignored for `WAS.Base`.
 
 **`cell_node_vsi_profile`**
-:   The instance profile for custom node VSIs in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://www.ibm.com/cloud/vpc/pricing). Only applicable when deploy_was_topology is WAS.Cell.
+:   The instance profile for custom node VSIs in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when deploy_was_topology is WAS.Cell.
 
 **`vsi_os_admin_name`**
 :   The VSI Administrator username that is used to log in to VSI. The value must be 1-30 characters long and must contain letters and numbers only. The value must not contain `virtuser` or `wsadmin`. The default is `virtuser`.
