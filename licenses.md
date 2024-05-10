@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-14"
+  years: 2020, 2024
+lastupdated: "2024-05-07"
 
-keywords: license, licenses, terms, conditions, websphere, vsi
+keywords: license, licenses, terms, conditions, websphere, vsi, topology, base, cell, profile
 
 subcollection: was-for-vsi
 
@@ -23,15 +23,15 @@ subcollection: was-for-vsi
 # Licenses
 {: #licenses}
 
-The license terms for WAS.Base are defined by the {{site.data.keyword.appserver_short}} license. The WAS.Cell license terms are covered by the {{site.data.keyword.appserver_short}} Network Deployment license.
+The license terms for **`WAS.Base`** are defined by the {{site.data.keyword.appserver_short}} license. The **`WAS.Cell`** license terms are covered by the {{site.data.keyword.appserver_short}} Network Deployment license.
 {: shortdesc}
 
 Select the applicable link in the following table to view the license terms for the software product you are about to install.
 
 | Topology   | License |
 |------------|---------|
-| WAS.Base   | [{{site.data.keyword.appserver_short}}](https://ibm.biz/tWASBaseLicenseIBMCloudVSIs){: external} |
-| WAS.Cell   | [{{site.data.keyword.appserver_short}} Network Deployment](https://ibm.biz/tWASNDLicenseIBMCloudVSIs){: external} |
+| **`WAS.Base`**   | [{{site.data.keyword.appserver_short}}](https://ibm.biz/tWASBaseLicenseIBMCloudVSIs){: external} |
+| **`WAS.Cell`**   | [{{site.data.keyword.appserver_short}} Network Deployment](https://ibm.biz/tWASNDLicenseIBMCloudVSIs){: external} |
 {: caption="Table 1. WebSphere licenses" caption-side="top"}
 
 A {{site.data.keyword.was4vsi_short}} deployment sets up virtual private cloud (VPC), virtual server instance (VSI), and networking artifacts. Refer to {{site.data.keyword.cloud_notm}} Billing ([https://cloud.ibm.com/billing](https://cloud.ibm.com/billing)) for the charges incurred for these artifacts.

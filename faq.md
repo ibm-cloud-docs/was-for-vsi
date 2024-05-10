@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-23"
+lastupdated: "2024-05-07"
 
-keywords: bug, problem, faqs, Frequently Asked Questions, question
+keywords: bug, problem, faqs, Frequently Asked Questions, question, install, ihs, tile, permission, role
 
 subcollection: was-for-vsi
 
@@ -62,6 +62,15 @@ No, but you get charged for the infrastructure. Refer to [Topologies](/docs/was-
 {: faq}
 
 No, you can use the tile only for one installation. After the initial installation, it is your responsibility to manage and upgrade the installation. 
+
+## What is IHS?
+{: #faq-ihs}
+{: faq}
+
+IBM HTTP Server (IHS) is a web server that is based on the open source Apache HTTP Server. An *HTTP server* is a program that enables a computer to respond to requests using the Hypertext Transfer Protocol (HTTP). An HTTP server is also known as a *web server*.
+
+You can use an IHS VSI with the `WAS.Cell` topology. For more information, see [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies).
+
 
 <!--
 === For later === 
