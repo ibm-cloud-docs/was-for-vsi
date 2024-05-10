@@ -1,11 +1,11 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-20"
+  years: 2020, 2024
+lastupdated: "2024-05-07"
 
 
-keywords: websphere, vsi, virtual server instance, terraform, deploying
+keywords: websphere, vsi, virtual server instance, terraform, deploying, install, ihs, console
 
 subcollection: was-for-vsi
 
@@ -38,8 +38,8 @@ The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can 
 {: step}
 
 1. Read the terminology and topology descriptions in [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies).
-2. Check your IBMid and credential for BYOL. To download the {{site.data.keyword.appserver_short}} installation images, your [IBMid](https://www.ibm.com/account/) must have entitlement to download the required images from IBM Passport Advantage. Check your entitlements at [Passport Advantage Online for customers](https://www.ibm.com/software/passportadvantage/pao_customer.html).
-3. Set up your access and SSH key in your account. See the "Before you begin" section of [Getting started with Virtual Private Cloud (VPC)](https://cloud.ibm.com/docs/vpc?topic=vpc-getting-started#prereqs).
+2. Check your IBMid and credential for Bring Your Own License (BYOL). To download the {{site.data.keyword.appserver_short}} installation images, your [IBMid](https://www.ibm.com/account/) must have entitlement to download the required images from IBM Passport Advantage. Check your entitlements at [Passport Advantage Online for customers](https://www.ibm.com/software/passportadvantage/pao_customer.html).
+3. Set up your access and SSH key in your account. See the *Before you begin* section of [Getting started with Virtual Private Cloud (VPC)](https://cloud.ibm.com/docs/vpc?topic=vpc-getting-started#prereqs).
 
 
 ## Install a WebSphere product
@@ -48,8 +48,8 @@ The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can 
 
 1. Launch [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global){: external}.
 2. In the form, set an identifiable name for your installation.
-3. Specify all the required parameters. Set a strong password for `vsi_os_admin_password` and `vsi_websphere_admin_password`.
-4. Review and specify optional parameters as needed. Some optional parameters depend on the value that you chose for `deploy_was_topology`.
+3. Specify all the required parameters. Set a strong password for **`vsi_os_admin_password`** and **`vsi_websphere_admin_password`**. Required and optional parameters are described in [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values).
+4. Review and specify optional parameters as needed. Some optional parameters depend on the value that you chose for **`deploy_was_topology`**.
 5. Accept the license (terms and conditions).
 6. Click **Install**. It might take 5 or more minutes to complete the installation. Installation time varies depending on the available interim fixes, network speed, and VSI specifications.
 7. Review the log. If you see the following messages toward the end of the log, then the installation was successful.

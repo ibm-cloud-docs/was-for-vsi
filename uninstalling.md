@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-14"
+  years: 2020, 2024
+lastupdated: "2024-05-07"
 
-keywords: uninstalling, removing, workspace, resource
+keywords: uninstalling, uninstall, removing, remove, workspace, resource
 
 subcollection: was-for-vsi
 

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-23"
+lastupdated: "2024-05-07"
 
-keywords: deployment values, install, websphere, vsi, passport advantage, ppa
+keywords: deployment values, install, websphere, vsi, passport advantage, ppa, license, profile, ihs, cell
 
 subcollection: was-for-vsi
 
@@ -30,7 +30,7 @@ When you install the WebSphere products, select the parameter values for deploym
 {: #pa-parms}
 
 **`ibm_id`**
-:   This offer is Bring Your Own License. To deploy this offer, you must enter your registered IBMid and your IBMid must have active WebSphere entitlements that are associated with it. You can check your entitlements at [Passport Advantage Online for customers](https://www.ibm.com/software/passportadvantage/pao_customer.html).
+:   This offer is Bring Your Own License (BYOL). To deploy this offer, you must enter your registered IBMid and your IBMid must have active WebSphere entitlements that are associated with it. You can check your entitlements at [Passport Advantage Online for customers](https://www.ibm.com/software/passportadvantage/pao_customer.html).
 
 **`ibm_id_password`**
 :   IBMid password.
@@ -43,7 +43,7 @@ When you install the WebSphere products, select the parameter values for deploym
 :  The region and zone where the VPC is created, such as `us-south-1` or `us-east-2`. For the latest list of {{site.data.keyword.cloud_notm}} regions, see the [Virtual Private Cloud (VPC) documentation](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region).
 
 **`vpc_name`**
-:  The unique name for this VPC. The name must start with a lowercase letter, use only lowercase alphanumeric characters and hyphens (without spaces), and cannot end with a hyphen. This offer creates a ([VPC](/vpc-ext/network/vpcs)) and one or more [virtual server instances (VSIs)](/vpc-ext/compute/vs) where WebSphere is installed."
+:  The unique name for this VPC. The name must start with a lowercase letter, use only lowercase alphanumeric characters and hyphens (without spaces), and cannot end with a hyphen. This offer creates a ([VPC](/vpc-ext/network/vpcs)) and one or more [virtual server instances (VSIs)](/vpc-ext/compute/vs) where WebSphere is installed.
 
 **`vpc_sshkey_name`**
 :  The name of the SSH key in your {{site.data.keyword.cloud_notm}} account. Use this key to [SSH log in to VSIs](/vpc-ext/compute/sshKeys). Make sure that the SSH key exists in the same region where the VPC is created.
@@ -71,22 +71,22 @@ When you install the WebSphere products, select the parameter values for deploym
 :   The instance profile for the DMgr VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs).
 
 **`cell_ihs_setup_vsi`**
-:   When set to `true`, sets up the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `true`. Only applicable when deploy_was_topology is WAS.Cell.
+:   When set to `true`, sets up the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `true`. Only applicable when **`deploy_was_topology`** is `WAS.Cell`.
 
 **`cell_ihs_vsi_profile`**
-:   The instance profile for the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when deploy_was_topology is WAS.Cell.
+:   The instance profile for the IBM HTTP Server VSI in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when **`deploy_was_topology`** is `WAS.Cell`.
 
 **`cell_node_count`**
-:   The number of custom nodes you want to provision for WAS.Cell, which must be between 1 and 20 (inclusive). This parameter is ignored for `WAS.Base`.
+:   The number of custom nodes you want to provision for `WAS.Cell`, which must be between 1 and 20 (inclusive). This parameter is ignored for `WAS.Base`.
 
 **`cell_node_vsi_profile`**
-:   The instance profile for custom node VSIs in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when deploy_was_topology is WAS.Cell.
+:   The instance profile for custom node VSIs in a `WAS.Cell` topology. The default is `cx2-2x4`. See [available profiles](/docs/vpc?topic=vpc-profiles) and [pricing](https://cloud.ibm.com/vpc-ext/provision/vs). Only applicable when **`deploy_was_topology`** is `WAS.Cell`.
 
 **`vsi_os_admin_name`**
 :   The VSI Administrator username that is used to log in to VSI. The value must be 1-30 characters long and must contain letters and numbers only. The value must not contain `virtuser` or `wsadmin`. The default is `virtuser`.
 
 **`vsi_websphere_admin_name`**
-:   The WebSphere Administrator username that is used to log in to administrative console and VSI. The value must be 1-30 characters long and must contain letters and numbers only. The value must not contain `virtuser` or `wsadmin`. The default is `wsadmin`.
+:   The WebSphere Administrator username that is used to log in to the administrative console and VSI. The value must be 1-30 characters long and must contain letters and numbers only. The value must not contain `virtuser` or `wsadmin`. The default is `wsadmin`.
 
 
 ## Other parameters

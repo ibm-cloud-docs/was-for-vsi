@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-14"
+  years: 2020, 2024
+lastupdated: "2024-05-07"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -41,14 +41,14 @@ on main.tf line 184, in resource "ibm_is_instance" "primary":
  184: resource "ibm_is_instance" "primary" {
 ```
 
-The error occurs when a vsi profile value is not valid.
+The error occurs when a VSI profile value is not valid.
 {: tsCauses}
 
-- If the error message refers to "ibm_is_instance" "primary" then the `base_vsi_profile` or `cell_dmgr_vsi_profile` is invalid.
-- If it refers to "ibm_is_instance" "ihs" then `cell_ihs_vsi_profile` is invalid.
-- If it refers to "ibm_is_instance" "node" then `cell_node_vsi_profile` is invalid.
+- If the error message refers to "ibm_is_instance" "primary" then the **`base_vsi_profile`** or **`cell_dmgr_vsi_profile`** parameter value is invalid.
+- If it refers to "ibm_is_instance" "ihs" then the **`cell_ihs_vsi_profile`** parameter value is invalid.
+- If it refers to "ibm_is_instance" "node" then the **`cell_node_vsi_profile`** parameter value is invalid.
 
-See available profiles at [VPC Profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles).
+These VSI instance profile parameters are described in [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values). For information about available profiles, see [VPC Profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles). 
 {: tsResolve}
 
 ## Error: No SSH Key found
@@ -58,10 +58,10 @@ See available profiles at [VPC Profiles](https://cloud.ibm.com/docs/vpc?topic=vp
 Error: No SSH Key found with name <INVALID_KEY_NAME>
 {: tsSymptoms}
 
-The error means that the specified SSH key name (`vpc_sshkey_name`) is wrong or the key does not exist in the region based on the `Region` parameter.
+The error means that the specified SSH key name (**`vpc_sshkey_name`** parameter) is wrong or the key does not exist in the region based on the `Region` parameter.
 {: tsCauses}
 
-Make sure that the SSH key name is specified correctly and that the key exists in the region where the VPC will be created. Refer to [SSH Key](https://cloud.ibm.com/vpc-ext/compute/sshKeys) for more details.
+Make sure that the SSH key name is specified correctly and that the key exists in the region where the VPC will be created. Refer to [SSH keys for VPC](https://cloud.ibm.com/vpc-ext/compute/sshKeys) for details. For information about the **`vpc_sshkey_name`** parameter, see [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values).
 {: tsResolve}
 
 ## Error: SSH authentication failed while creating VSI
@@ -71,8 +71,8 @@ Make sure that the SSH key name is specified correctly and that the key exists i
 Error in Schematics log: timeout - last error: SSH authentication failed (USER@IP:22): ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
 {: tsSymptoms}
 
-The error means that the specified value for the `vsi_os_admin_name` or `vsi_websphere_admin_name` parameter is wrong.
+The error means that the specified value for the **`vsi_os_admin_name`** or **`vsi_websphere_admin_name`** parameter is wrong.
 {: tsCauses}
 
-If you changed the default value for the `vsi_os_admin_name` or `vsi_websphere_admin_name` parameter, then make sure that the new value does not contain the `virtuser` or `wsadmin` default value.
+If you changed the default value for the **`vsi_os_admin_name`** or **`vsi_websphere_admin_name`** parameter, then make sure that the new value does not contain the `virtuser` or `wsadmin` default value. For information about the parameters, see [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values).
 {: tsResolve}
