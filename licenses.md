@@ -36,4 +36,4 @@ Select the applicable link in the following table to view the license terms for 
 
 A {{site.data.keyword.was4vsi_short}} deployment sets up virtual private cloud (VPC), virtual server instance (VSI), and networking artifacts. Refer to {{site.data.keyword.cloud_notm}} Billing ([https://cloud.ibm.com/billing](https://cloud.ibm.com/billing)) for the charges incurred for these artifacts.
 
-<!-- To remove broken link checker problems with "" in license URLs, use %22 instead of " thus replace "5724-H88" with %225724-H88%22 and "5724-J08" with %225724-J08%22 -->
+

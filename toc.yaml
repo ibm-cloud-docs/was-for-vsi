@@ -1,7 +1,6 @@
 #  Name your file `toc.yaml`
 #  Make sure you include all nav file coding requirements
 #  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
-
 toc:
   properties:
     subcollection: was-for-vsi
@@ -13,7 +12,6 @@ toc:
     product-page: https://www.ibm.com/products/websphere-application-server
     path: was-for-vsi
     label: WebSphere Application Server
-
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group.
   entries: 
     - navgroup: 
@@ -22,19 +20,16 @@ toc:
        - getting-started.md
        - topologies.md
        - dep-values.md
-
 #    - navgroup: 
 #      id: tutorial
 #      topics: 
 #      - topic-1.md
 #      - topic-2.md
-
     - navgroup: 
        id: howto
        topics:
        - migrating.md
        - uninstalling.md
-
 #  Links to your REST API docs should be included in the Reference navigation group.
 #  Links to your command line reference docs should be included in the Reference navigation group.
     - navgroup:
@@ -45,7 +40,6 @@ toc:
        - link:
           label: Terraform reference
           href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs
-
     - navgroup:
        id: help
        topics:
@@ -54,4 +48,3 @@ toc:
        - faq.md
        - known-issues.md
        - troubleshoot.md
-

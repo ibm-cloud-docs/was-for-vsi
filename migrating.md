@@ -27,10 +27,7 @@ subcollection: was-for-vsi
 You can migrate your {{site.data.keyword.appserver_short}} traditional applications to your {{site.data.keyword.was4vsi_short}} environment.
 {: shortdesc}
 
-<!--
-## Migrating {{site.data.keyword.appserver_short}} traditional applications
-{: #migrat-twas}
--->
+
 To migrate your {{site.data.keyword.appserver_short}} traditional applications to a VSI, [use {{site.data.keyword.appserver_short}} migration tools](https://www.ibm.com/docs/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/tcld_move_app.html){: external} such as the {{site.data.keyword.appserver_short}} Migration Toolkit or {{site.data.keyword.cloud_notm}} Transformation Advisor.
 
 The [Migrating product technologies](https://www.ibm.com/docs/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/welcome_migrating_tech.html){: external} topic also might provide helpful instructions for migrating your applications.
