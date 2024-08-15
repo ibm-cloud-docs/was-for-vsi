@@ -27,7 +27,7 @@ subcollection: was-for-vsi
 General problems with using {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}} might include the inability to connect to your application or to see your environment. In many cases, you can recover from these problems by following a few easy steps.
 {: shortdesc}
 
-<!-- where the first xxx is the long name of your service and the following xxx are pulled from your popular troubleshooting topics -->
+
 
 ## Error: the provided instance profile ID does not exist
 {: #troubleshoot-profilenotfound}

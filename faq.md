@@ -72,11 +72,6 @@ IBM HTTP Server (IHS) is a web server that is based on the open source Apache HT
 You can use an IHS VSI with the `WAS.Cell` topology. For more information, see [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies).
 
 
-<!--
-=== For later === 
-Why do I need to specify IBMId and password? What is the alternative?
-Can I use IBM Secret Manager?
-Where can I find the common errors and their resolution?
--->
 
-<!-- For detailed guidance on what to include on this page, see [FAQs guidance](/docs/developing/writing/faq.html#faqs). You can also check out some examples here: [IBM Cloud IAM FAQs](/docs/developing/Access-Management/iamfaq.html#faqs) and [Account FAQs](/docs/account/account_faq.html#accountfaqs). -->
+
+
