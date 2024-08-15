@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-20"
+  years: 2020, 2024
+lastupdated: "2024-08-15"
 
 keywords: migrating, migrate, move, workspace, resource, applications
 

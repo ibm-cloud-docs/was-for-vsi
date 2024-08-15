@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-05-07"
+lastupdated: "2024-08-15"
 
 keywords: release notes, update, fix pack, fixpack, version, whats new, new in release
 

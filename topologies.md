@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-07"
+lastupdated: "2024-08-15"
 
 keywords: topology, topologies, products, websphere, vsi, server, deployment manager, cell, ihs, vpc, ports, consoles
 
