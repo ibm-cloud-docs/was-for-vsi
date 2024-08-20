@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-07"
+lastupdated: "2024-08-20"
 
 keywords: topology, topologies, products, websphere, vsi, server, deployment manager, cell, ihs, vpc, ports, consoles
 
@@ -23,7 +23,7 @@ subcollection: was-for-vsi
 # Topologies
 {: #topologies}
 
-Use {{site.data.keyword.was4vsi}} to install a {{site.data.keyword.appserver_short}} traditional environment on a {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4 virtual server instance (VSI) on {{site.data.keyword.cloud}}.
+Use {{site.data.keyword.was4vsi}} to install a {{site.data.keyword.appserver_short}} traditional environment on a {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 9.4 virtual server instance (VSI) on {{site.data.keyword.cloud}}.
 {: shortdesc}
 
 This documentation refers to {{site.data.keyword.appserver_short}} as ***WebSphere*** or ***WAS***.
