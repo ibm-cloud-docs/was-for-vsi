@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-07"
+lastupdated: "2024-08-20"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -26,8 +26,6 @@ subcollection: was-for-vsi
 
 General problems with using {{site.data.keyword.was4vsi}} in {{site.data.keyword.cloud}} might include the inability to connect to your application or to see your environment. In many cases, you can recover from these problems by following a few easy steps.
 {: shortdesc}
-
-
 
 ## Error: the provided instance profile ID does not exist
 {: #troubleshoot-profilenotfound}
