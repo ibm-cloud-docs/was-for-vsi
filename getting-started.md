@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-08-15"
+lastupdated: "2024-08-20"
 
 keywords: websphere, vsi, virtual server instance, terraform, deploying, install, ihs, console
 
@@ -28,7 +28,7 @@ content-type: tutorial
 {: #getting-started}
 {: toc-content-type="tutorial"}
 
-The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can use [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) to install a {{site.data.keyword.appserver_short}} traditional environment on one or more {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 8.4 virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
+The Deploying {{site.data.keyword.was4vsi_notm}} tutorial describes how you can use [{{site.data.keyword.was4vsi_notm}}](https://{DomainName}/catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) to install a {{site.data.keyword.appserver_short}} traditional environment on one or more {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 9.4 virtual server instances (VSIs) on {{site.data.keyword.cloud}}.
 {: shortdesc}
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-08-15"
+lastupdated: "2024-08-20"
 
 keywords: license, licenses, terms, conditions, websphere, vsi, topology, base, cell, profile
 
@@ -35,5 +35,4 @@ Select the applicable link in the following table to view the license terms for 
 {: caption="Table 1. WebSphere licenses" caption-side="top"}
 
 A {{site.data.keyword.was4vsi_short}} deployment sets up virtual private cloud (VPC), virtual server instance (VSI), and networking artifacts. Refer to {{site.data.keyword.cloud_notm}} Billing ([https://cloud.ibm.com/billing](https://cloud.ibm.com/billing)) for the charges incurred for these artifacts.
-
 

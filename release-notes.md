@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-08-15"
+lastupdated: "2024-08-20"
 
 keywords: release notes, update, fix pack, fixpack, version, whats new, new in release
 
@@ -25,6 +25,15 @@ subcollection: was-for-vsi
 
 Use the release notes to learn about the latest changes to {{site.data.keyword.was4vsi}}. The notes are grouped by release date or version number.
 {: shortdesc}
+
+## 20 August 2024: {{site.data.keyword.was4vsi_short}} 2.2.0 on {{site.data.keyword.cloud_notm}}
+{: #v220}
+
+Version 2.2.0 changes the Version 2.1.0 product:
+
+* Installation uses VSI images with the latest version of WebSphere traditional Version 9.0.5 preinstalled on {{site.data.keyword.redhat_full}} Enterprise Linux&reg; 9.4.
+* Miscellaneous bug fixes
+
 
 ## 20 October 2021: {{site.data.keyword.was4vsi_short}} 2.1.0 on {{site.data.keyword.cloud_notm}}
 {: #v210}
