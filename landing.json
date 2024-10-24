@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "title": "WebSphere Application Server",
+    "introduction": "Install a WebSphere Application Server traditional environment on one or more Red Hat® Enterprise Linux® 9.4 virtual server instances (VSIs) on IBM Cloud®.",
+    "product_page": "https://www.ibm.com/products/websphere-application-server",
+    "console_page": "/catalog/content/.::1-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Deploying IBM WebSphere Application Server",
+          "href": "/docs/was-for-vsi?topic=was-for-vsi-getting-started"
+        },
+        {
+          "title": "Topologies",
+          "href": "/docs/was-for-vsi?topic=was-for-vsi-topologies"
+        },
+        {
+          "title": "Deployment values",
+          "href": "/docs/was-for-vsi?topic=was-for-vsi-dep-values"
+        },
+        {
+          "title": "FAQs",
+          "href": "/docs/was-for-vsi?topic=was-for-vsi-faq"
+        },
+        {
+          "title": "Getting help and support",
+          "href": "/docs/was-for-vsi?topic=was-for-vsi-support"
+        }
+      ]
+    },
+    "section_updates": {
+      "view_more": "/docs/was-for-vsi?topic=was-for-vsi-release-notes",
+      "tiles": [
+        {
+          "date": "20 August 2024",
+          "title": "WebSphere Application Server 2.2.0 on IBM Cloud"
+        },
+        {
+          "date": "20 October 2021",
+          "title": "WebSphere Application Server 2.1.0 on IBM Cloud"
+        },
+        {
+          "date": "5 February 2021",
+          "title": "WebSphere Application Server 1.0.1 on IBM Cloud"
+        },
+        {
+          "date": "20 November 2020",
+          "title": "WebSphere Application Server 1.0.0 on IBM Cloud"
+        }
+      ]
+    }
+  }
