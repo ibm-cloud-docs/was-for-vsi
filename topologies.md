@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-08-20"
+  years: 2020, 2025
+lastupdated: "2025-08-04"
 
 keywords: topology, topologies, products, websphere, vsi, server, deployment manager, cell, ihs, vpc, ports, consoles
 
@@ -42,7 +42,7 @@ The installation sets up a new virtual private cloud (VPC), one or more VSIs, an
 ## VPC details
 {: #vpc-details}
 
-The VPC, VSI, and related networking artifacts are created in the same resource group where the Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see [information about virtual private clouds](https://cloud.ibm.com/vpc-ext).
+The VPC, VSI, and related networking artifacts are created in the same resource group where the Schematics workspace is created. After the installation is complete, refer to the **Resources** section of the Schematics workspace for these artifacts. For more details about the artifacts, see [information about virtual private clouds](https://cloud.ibm.com/infrastructure).
 
 ## VSI details
 {: #vsi-details}

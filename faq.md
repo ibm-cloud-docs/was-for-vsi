@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-08-20"
+  years: 2020, 2025
+lastupdated: "2025-08-04"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question, install, ihs, tile, permission, role
 
@@ -55,7 +55,7 @@ Follow the instructions in [Uninstalling your workspace or resources](/docs/was-
 {: #faq-tile}
 {: faq}
 
-No, but you get charged for the infrastructure. Refer to [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies) for infrastructure resources provisioned and to [Pricing](https://cloud.ibm.com/vpc-ext/provision/vs) for the associated cost.
+No, but you get charged for the infrastructure. Refer to [Topologies](/docs/was-for-vsi?topic=was-for-vsi-topologies) for infrastructure resources provisioned and to [Pricing](https://cloud.ibm.com/infrastructure/provision/vs) for the associated cost.
 
 ## Can I use the tile to upgrade {{site.data.keyword.appserver_short}} after initial installation?
 {: #faq-upgrade}
