@@ -61,7 +61,7 @@ Error: No SSH Key found with name <INVALID_KEY_NAME>
 The error means that the specified SSH key name (**`vpc_sshkey_name`** parameter) is wrong or the key does not exist in the region based on the `Region` parameter.
 {: tsCauses}
 
-Make sure that the SSH key name is specified correctly and that the key exists in the region where the VPC will be created. Refer to [SSH keys for VPC](https://cloud.ibm.com/vpc-ext/compute/sshKeys) for details. For information about the **`vpc_sshkey_name`** parameter, see [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values).
+Make sure that the SSH key name is specified correctly and that the key exists in the region where the VPC will be created. Refer to [SSH keys for VPC](https://cloud.ibm.com/infrastructure/compute/sshKeys) for details. For information about the **`vpc_sshkey_name`** parameter, see [Deployment values](/docs/was-for-vsi?topic=was-for-vsi-dep-values).
 {: tsResolve}
 
 ## Error: SSH authentication failed while creating VSI
