@@ -43,9 +43,9 @@ toc:
     - navgroup:
        id: help
        topics:
-       - support.md
+       - topic: get-help.md
+         navtitle: Getting help and support
        - release-notes.md
        - faq.md
        - known-issues.md
        - troubleshoot.md
-       

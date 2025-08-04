@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-08-20"
+  years: 2020, 2025
+lastupdated: "2025-08-04"
 
 keywords: migrating, migrate, move, workspace, resource, applications
 
@@ -26,6 +26,7 @@ subcollection: was-for-vsi
 
 You can migrate your {{site.data.keyword.appserver_short}} traditional applications to your {{site.data.keyword.was4vsi_short}} environment.
 {: shortdesc}
+
 
 To migrate your {{site.data.keyword.appserver_short}} traditional applications to a VSI, [use {{site.data.keyword.appserver_short}} migration tools](https://www.ibm.com/docs/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/tcld_move_app.html){: external} such as the {{site.data.keyword.appserver_short}} Migration Toolkit or {{site.data.keyword.cloud_notm}} Transformation Advisor.
 
