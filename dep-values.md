@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-08-04"
+  years: 2020, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: deployment values, install, websphere, vsi, passport advantage, ppa, license, profile, ihs, cell
 
