@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-08-20"
+  years: 2020, 2025
+lastupdated: "2025-08-04"
 
 keywords: websphere, vsi, virtual server instance, terraform, deploying, install, ihs, console
 
@@ -79,4 +79,4 @@ You can [migrate your {{site.data.keyword.appserver_short}} applications](/docs/
 
 To get IBM software support updates, [subscribe to My Notifications and other communications](https://www.ibm.com/support/pages/node/718119){: external}.
 
-Join the [IBM WebSphere, Liberty & DevOps Community](https://community.ibm.com/community/user/wasdevops/communities/websphere-home){: external} or [other communities](https://community.ibm.com/community/user/sitemap){: external} to collaborate and share knowledge in forums and blogs.
+Join the [IBM WebSphere, Liberty & DevOps Community](https://community.ibm.com/community/user/wasdevops/communities/websphere-home){: external} to collaborate and share knowledge in forums and blogs.
