@@ -94,3 +94,6 @@ When you install the WebSphere products, select the parameter values for deploym
 
 **`verbose`**
 :   When set to `true`, specifies to log debug information. The default is `true`.
+
+**`verbose`**
+:   When set to `true`, specifies to log debug information. The default is `true`.
